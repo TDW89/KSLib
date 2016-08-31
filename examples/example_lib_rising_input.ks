@@ -31,9 +31,9 @@ print "Type 'end' to exit" at(30,0).
 until step >= 3 {
  set active to rising_input_check(lex, controls_to_check).
  if not active:empty{
+  clearscreen.
   print active.
   print "Type 'end' to exit" at(30,0).
-  print ship:liquidfuel.
  }
  if step = 0 and active:contains("e") {
   set step to 1.
